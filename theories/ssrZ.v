@@ -52,7 +52,7 @@ HB.instance Definition _ (V : nmodType) (x : V) :=
 
 #[export]
 HB.instance Definition _ (R : semiRingType) :=
-  GRing.isMultiplicative.Build nat R (GRing.natmul 1) (natrM R, mulr1n 1).
+  GRing.isMultiplicative.Build nat R (GRing.natmul 1) (natrM R, mulr1n 1%R).
 
 Fact Posz_is_semi_additive : semi_additive Posz.
 Proof. by []. Qed.
